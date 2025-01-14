@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favorite Movies</title>
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #212121;
+            padding: 20px;
+        }
+
+        main.movies {
+            max-width: 1100px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        .movies-section {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            padding: 0;
+            text-align: center; /* Ensure center alignment */
+        }
+
+        section.movie-card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 300px; /* Fixed width for uniform cards */
+            text-align: center;
+            padding: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin: 0 10px; /* Optional margin between cards */
+        }
+
+        section.movie-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        section.movie-card img {
+            max-width: 100%;
+            height: 200px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        section.movie-card p {
+            margin: 10px 0;
+            color: #212121;
+        }
+
+        section.movie-card strong {
+            color: #0077cc;
+        }
+
+    </style>
+</head>
+<body>
+    <main class="movies">
+        <h2>My top 6 Favorite movies</h2>
+        <div class="movies-section">
+            <section class="movie-card">
+                <img src="../movie_images/3-idiots.jpg" alt="3-idiots">
+                <p>Movie Title: <strong>3-idiots</strong></p>
+                <p>Description: A 2009 Indian Hindi-language coming-of-age comedy-drama film written, 
+                    edited and directed by Rajkumar Hirani.</p>
+            </section>
+            <section class="movie-card">
+                <img src="../movie_images/jabWeMet.jpg" alt="jabWeMet">
+                <p>Movie Title: <strong>Jab We Met</strong></p>
+                <p>Description: A 2007 Indian Hindi-language romantic comedy film written and directed by Imtiaz Ali.</p>
+            </section>
+            <section class="movie-card">
+                <img src="../movie_images/LunchBox.png" alt="LunchBox">
+                <p>Movie Title: <strong>LunchBox</strong></p>
+                <p>Description: A 2013 drama film written and directed by Ritesh Batra.</p>
+            </section>
+            <section class="movie-card">
+                <img src="../movie_images/gangsOfWasseypur.jpg" alt="gangsOfWasseypur">
+                <p>Movie Title: <strong>Gangs Of Wasseypur</strong></p>
+                <p>Description:  a 2012 Indian Hindi-language epic black comedy crime 
+                    film directed by Anurag Kashyap.</p>
+            </section>
+            <section class="movie-card">
+                <img src="../movie_images/taareZameenPar.jpg" alt="taareZameenPar">
+                <p>Movie Title: <strong>Taare Zameen Par</strong></p>
+                <p>Description: A 2007 Indian Hindi-language drama film produced and directed by Aamir Khan.</p>
+            </section>
+            <section class="movie-card">
+                <img src="../movie_images/DDLJ.jpg" alt="DDLJ">
+                <p>Movie Title: <strong>DDLJ</strong></p>
+                <p>Description: a 1995 Indian Hindi-language musical romance film written and directed by 
+                    Aditya Chopra. </p>
+            </section>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favorite Books</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #212121;
+            padding: 20px;
+        }
+
+        main.books {
+            max-width: 1100px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        .book-section {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            padding: 0;
+            text-align: center; /* Ensure center alignment */
+        }
+
+        section.card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 300px; /* Fixed width for uniform cards */
+            text-align: center;
+            padding: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin: 0 10px; /* Optional margin between cards */
+        }
+
+        section.card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        section.card img {
+            max-width: 100%;
+            height: 200px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        section.card p {
+            margin: 10px 0;
+            color: #212121;
+        }
+
+        section.card strong {
+            color: #0077cc;
+        }
+
+        span{
+            color: #334455;
+        }
+    </style>
+</head>
+<body>
+    <main class="books">
+        <h2>My Top 5 Favorite Books</h2>
+        <div class="book-section">
+            <section class="card">
+                <img src="../books_images/bhagwad_gita.jpg" alt="bhagwad_gita">
+                <p>Book Title : <strong>Bhagwad Gita</strong></p>
+                <p>Book Description :<span>Often referred to as the Gita is a Hindu scripture, dated 
+                    to the second or first century BCE which forms part of the epic Mahabharata.</span> </p>
+            </section>
+            <section class="card">
+                <img src="../books_images/discovery_of_india.jpg" alt="discovery_of_india">
+                <p>Book Title : <strong>Discovery Of India</strong></p>
+                <p>Book Description : <span>The journey in The Discovery of India begins from ancient history, leading up to the 
+                    last years of the British Raj. Nehru uses his knowledge of the Upanishads, Vedas, and textbooks on ancient 
+                    history to introduce to the reader the development of India from the Indus Valley civilization, 
+                    through the changes in socio-political scenario every foreign invader brought, to the present day conditions.</span>  </p>
+            </section>
+            <section class="card">
+                <img src="../books_images/my_experiments_with_truth.jpg" alt="my_experiments_with_truth">
+                <p>Book Title : <strong>The Story Of My Experiments With Truth</strong></p>
+                <p>Book Description : <span>The autobiography of Mahatma Gandhi, covering his life from early childhood through to 1921.</span> </p>
+            </section>
+            <section class="card">
+                <img src="../books_images/sapiens.jpg" alt="sapiens">
+                <p>Book Title : <strong>Sapiens: A Brief History of Humankind </strong></p>
+                <p>Book Description : <span>The book by Yuval Noah Harari focuses on Homo sapiens, and surveys the history of humankind, starting from 
+                    the Stone Age and going up to the 21st century. The account is situated within a framework that intersects 
+                    the natural sciences with the social sciences.</span> </p>
+            </section>
+            <section class="card">
+                <img src="../books_images/wisdom_of_crowd.jpg" alt="wisdom_of_crowd">
+                <p>Book Title : <strong>The Wisdom of Crowds</strong></p>
+                <p>Book Description : <span>Published in 2004, is a book written by James Surowiecki about the aggregation of information in groups, 
+                    resulting in decisions that, he argues, are often better than could have been made by any single member of the group. </span> </p>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
